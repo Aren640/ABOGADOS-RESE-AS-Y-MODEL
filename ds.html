@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Usuarios Aleatorios</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .usuario {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .usuario img {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Usuarios Aleatorios</h1>
+  <div id="contenedor-usuarios"></div>
+
+  <script>
+    $(document).ready(function () {
+      $.getJSON("https://randomuser.me/api/?results=5", function (data) {
+        $.each(data.results, function (index, elemento) {
+          const nombre = elemento.name.first + " " + elemento.name.last;
+          const imagen = elemento.picture.medium;
+
+          const htmlEjemplo = `
+            <div class="usuario">
+              <img src="${imagen}" alt="Foto de ${nombre}">
+              <p>${nombre}</p>
+            </div>
+          `;
+
+          $("#contenedor-usuarios").append(htmlEjemplo);
+        });
+      }).fail(function () {
+        $("#contenedor-usuarios").html("<p>Error al cargar los usuarios.</p>");
+      });
+    });
+  </script>
+</body>
+</html>

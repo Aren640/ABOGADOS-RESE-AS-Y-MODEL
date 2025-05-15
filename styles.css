@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo img {height: 80px;}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {color: #0056b3;}
+.hero {
+  background: linear-gradient(rgba(133,96,96,0), rgba(201,38,38,0)), url("ImagenFondo.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #001f3f;
+  background-color: rgba(255, 255, 255, 0.445);
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.cita-boton {
+  background-color: #001f3f;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.cta-button:hover {background-color: #004080;}
+.about {
+  position: relative;
+  z-index: 2; /*Para yo poder meter la parte de sobre mi encima de la portada*/
+  background-color: white;
+  margin: -30px auto;
+  padding: 60px 20px;
+  max-width: 800px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+}
+.about .text, .about .image {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+.about .text h2 {
+  font-size: 2em;
+  color: #001f3f;
+  margin-bottom: 15px;
+}
+.about .text p {line-height: 1.7;  p {
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}}
+.about .image img {
+  max-width: 75%;
+}
+.areas-legales {
+  padding: 60px 40px;
+  text-align: center;
+}
+.areas-legales h2 {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 5px;
+}
+.areas-legales h3 {
+  font-size: 2.5em;
+  color: #001f3f;
+  margin-bottom: 40px;
+}
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.area {
+  text-align: center;
+  padding: 20px;
+}
+.area img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+.area h4 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #001f3f;
+}
+.area p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.5;
+}
+.equipo {
+  background-color: #e6e7e9c4;
+  text-align: center;
+  padding: 60px 20px;
+}
+.titulo-equipo {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-top: 4px solid #001f3f;
+  border-bottom: 4px solid #001f3f;
+  font-weight: bold;
+}
+.miembros {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.miembro {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 250px;
+  text-align: center;
+}
+.miembro img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.miembro h3 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #001f3f;
+  font-weight: bold;
+}
+.contacto {
+  background: url('Fondo.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formulario-contacto {
+  background-color: rgba(255,255,255,0.85);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.formulario-contacto h2 {
+  font-size: 2rem;
+  color: #001f3f;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.formulario-contacto p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.formulario-contacto a {
+  color: #001f3f;
+  font-weight: bold;
+  text-decoration: none;
+}
+.fila-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.fila-inputs input, textarea {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #d9d9d9;
+  font-size: 0.95rem;
+  color: #333;
+}
+.fila-inputs input {
+  flex: 1;
+  min-width: 200px;
+}
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+button {
+  width: 500px;
+  padding: 14px;
+  background: #001f3f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.footer {
+  background-color: #ffffff;
+  color: #001f3f;
+  margin-top: 70px;
+  font-size: 0.95rem;
+}
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  flex-wrap: wrap;
+}
+.footer .columna {
+  flex: 1;
+  min-width: 250px;
+}
+.footer-logo {
+  height: 120px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.frase {
+  font-style: italic;
+  color: #333;
+  line-height: 1.6;
+}
+.footer a {
+  color: #0056b3;
+  text-decoration: none;
+}
+.footer a:hover {text-decoration: underline;}
+.mapa {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.footer-base {
+  background: #001f3f;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+.footer-base p {margin: 0;}
+.enlaces-legales a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.enlaces-legales a:hover {text-decoration: underline;}
+.reseñas h2 {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.reseñas h3 {
+  font-size: 2.5em;
+  color: #001f3f;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.usuario {
+    width: 80%;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.fila-superior {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+.foto {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+.nombre {
+    margin: 0;
+    font-size: 1em;
+  }
+
+.texto-reseña {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    padding-left: 85px;
+  }
+
+
+.contenedor-boton-reset {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.contenedor-boton-reset button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #001f3f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* El Modal abajo del todo esta */
+.modal {
+  display: none;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.cerrar {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+.boton-modal {
+  padding: 12px 24px;
+  background-color: #001f3f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+    
+
+    
+ 
+

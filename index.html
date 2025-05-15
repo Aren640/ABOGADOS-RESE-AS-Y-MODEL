@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tello Abogados</title>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="logoa.png" alt="Logo de Tello Abogados"></div>
+    <nav>
+      <ul>
+        <li><a href="#">INICIO</a></li>
+        <li><a href="#">SERVICIOS</a></li>
+        <li><a href="#">ABOGADOS</a></li>
+        <li><a href="#">FAQS</a></li>
+        <li><a href="#">NOTICIAS</a></li>
+        <li><a href="#">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>TU DERECHO, NUESTRA PRIORIDAD</h1>
+    <a href="#" class="cita-boton">Solicita tu consulta</a>
+  </section>
+  <section class="about">
+    <div class="text">
+      <h2>DESDE 1993</h2>
+      <p>Nuestra firma nació en 1993 con un propósito claro: brindar asesoría y defensa legal de la más alta calidad, respaldada por la ética, la experiencia y el compromiso con nuestros clientes.</p>
+      <br>
+      <p>Con más de tres décadas de trayectoria, seguimos evolucionando y adaptándonos a los nuevos retos del mundo legal, sin perder de vista nuestro principal objetivo: proteger tus derechos y ofrecerte la mejor representación posible.</p>
+    </div>
+    <div class="image"><img src="abogado.png" alt="Abogado en oficina"></div>
+  </section>
+  <section class="areas-legales">
+    <h2>Trabajamos en estas</h2>
+    <h3>ÁREAS LEGALES</h3>
+    <div class="areas-grid">
+      <div class="area"><img src="r.jpg" alt="Icono Derecho Civil"><h4>Derecho Civil</h4><p>Conflictos familiares, herencias, contratos, y responsabilidad civil.</p></div>
+      <div class="area"><img src="Entrelazado.png" alt="Icono Derecho Matrimonial"><h4>Derecho Matrimonial</h4><p>Divorcios, custodia, pensiones y todo lo relativo a familia.</p></div>
+      <div class="area"><img src="t.png" alt="Icono Derecho Mercantil"><h4>Derecho Mercantil</h4><p>Asesoramiento a empresas, sociedades, contratos comerciales.</p></div>
+      <div class="area"><img src="derecho.png" alt="Icono Derecho Penal"><h4>Derecho Penal</h4><p>Defensa penal, delitos económicos, violencia de género y más.</p></div>
+      <div class="area"><img src="administrativo.png" alt="Icono Derecho Administrativo"><h4>Derecho Administrativo</h4><p>Recursos administrativos, expropiaciones, sanciones, urbanismo.</p></div>
+      <div class="area"><img src="Derecha.png" alt="Icono Derecho General"><h4>Derecho General</h4><p>Otros servicios legales adaptados a tus necesidades específicas.</p></div>
+    </div>
+  </section>
+  <section class="equipo">
+    <h2 class="titulo-equipo">NUESTRO EQUIPO</h2>
+    <div class="miembros">
+      <div class="miembro"><img src="JAVI.jpg" alt="D. Castro"><h3>D. CASTRO</h3></div>
+      <div class="miembro"><img src="avatar.png" alt="D. Rafael"><h3>D. RAFAEL</h3></div>
+      <div class="miembro"><img src="abogado.jpg" alt="D. Pedro"><h3>D. PEDRO</h3></div>
+    </div>
+  </section>
+  <section class="reseñas">
+  <h2>Lo que dicen nuestros clientes</h2>
+  <h3>RESEÑAS</h3>
+  <div id="contenedor-usuarios" class="contenedor"></div>
+    <div class="contenedor-boton-reset">
+  <button id="resetear">Mas reseñas</button>
+</div>
+</section>
+</section>
+  <section class="contacto">
+    <div class="formulario-contacto">
+      <h2>CONTÁCTANOS</h2>
+      <p>Póngase en contacto con nosotros y le responderemos con la mayor brevedad posible. Consulte la posibilidad de comunicar con el despacho mediante videoconferencia.</p>
+      <p>Complete el formulario o envíe un email a <strong><a href="mailto:telloabogados@telloabogados.com">telloabogados@telloabogados.com</a></strong></p>
+      <form>
+        <div class="fila-inputs">
+          <input type="text" placeholder="Nombre*" required>
+          <input type="text" placeholder="Teléfono*" required>
+        </div>
+        <div class="fila-inputs">
+          <input type="text" placeholder="Derecho Civil*" required>
+          <input type="email" placeholder="Email*" required>
+        </div>
+        <textarea placeholder="Escribe tu consulta..." rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+<button id="abrir-modal" class="boton-modal">Más información</button>
+<div id="mi-modal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2>Información importante</h2>
+    <p>Esto es para ti Rober, espero que lo disfrutes mucho un abrazo.</p>
+  </div>
+</div>
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="columna">
+        <img src="logoa.png" alt="Logo Tello Abogados" class="footer-logo">
+        <p class="frase"><em>Defendiendo tus derechos con compromiso y excelencia.<br>Bienvenido a Tello Abogados donde cada caso recibe la atención y estrategia legal que merece.</em></p>
+      </div>
+      <div class="columna">
+        <h3>CONTACTANOS</h3>
+        <p><strong>DIRECCION:</strong><br><a href="https://maps.google.com?q=Av.+Maisonnave,+3,+2a,+03003+Alicante" target="_blank">Av. Maisonnave, 3, 2a, 03003 Alicante</a></p>
+        <p><strong>TELEFONOS:</strong><br>661 06 98 33 - 626 96 54 22</p>
+        <p><strong>CORREO:</strong><br><a href="mailto:telloabogados@telloabogados.com">telloabogados@telloabogados.com</a></p>
+        <p><strong>Lunes - Viernes :</strong><br>8:00 – 21:00</p>
+      </div>
+      <div class="columna"> 
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317713.763984986!2d-8.89018984294408!3d42.23135643955433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2589a33d2c1e5f%3A0x80e1a35e87c573e!2sVigo!5e0!3m2!1ses!2ses!4v1711567890123"
+        width="250" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    </div>
+    </div>
+    
+    <div class="footer-base">
+      <p>Copyright TELLO Abogados © 2025</p>
+      <div class="enlaces-legales">
+        <a href="#">Aviso Legal</a> |
+        <a href="#">Política de Privacidad</a> |
+        <a href="#">Política de Cookies</a>
+      </div>
+    </div>
+    
+  </footer>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
